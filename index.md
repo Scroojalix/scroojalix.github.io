@@ -1,3 +1,0 @@
-## Welcome to my website!
-
-I'll work on this later...
