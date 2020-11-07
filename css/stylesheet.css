@@ -9,3 +9,22 @@
     font-weight: normal;
     font-style: normal;
 }
+
+img.centered{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1.a{
+    font-family: 'Georgia', 'Times New Roman', 'Times, serif';
+    font-size: 60;
+    text-align: center;
+}
+p.a{
+    font-family: "ibm_plex";
+    font-size: 20;
+    text-align: center;
+}
+.inline-block{
+    display: inline-block;
+}
