@@ -19,11 +19,13 @@ h1.a{
     font-family: 'Georgia', 'Times New Roman', 'Times, serif';
     font-size: 60;
     text-align: center;
+    color: white;
 }
 p.a{
     font-family: "ibm_plex";
     font-size: 20;
     text-align: center;
+    color: white;
 }
 .inline-block{
     display: inline-block;
