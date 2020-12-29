@@ -49,14 +49,14 @@ p.a{
     background: #99999960;
     transition: background 0.15s linear;
 }
-.navbar-text {
+.navbar-element-text {
     text-align: center;
     vertical-align: middle;
     font-family: 'Open Sans', sans-serif;
     color: #f2f2f2;
     display: inline-block;
 }
-.navbar-image {
+.navbar-element-image {
     height: 35px;
     vertical-align: middle;
     padding-right: 15px;
@@ -68,9 +68,6 @@ p.a{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-.invert {
-    filter: invert(100%);
 }
 .vertical-middle {
     vertical-align: middle;
