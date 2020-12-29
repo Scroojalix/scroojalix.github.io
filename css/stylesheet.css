@@ -40,7 +40,8 @@ p.a{
 .navbar-element {
     float: right;
     display: block;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     transition: background 0.15s linear;
     cursor: pointer;
     text-decoration: none;
@@ -55,11 +56,12 @@ p.a{
     font-family: 'Open Sans', sans-serif;
     color: #f2f2f2;
     display: inline-block;
+    margin-right: 10px;
 }
 .navbar-element-image {
-    height: 35px;
+    height: 30px;
     vertical-align: middle;
-    padding-right: 15px;
+    padding-right: 10px;
     padding-left: 10px;
     display: inline-block;
 }
