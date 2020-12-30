@@ -6,7 +6,7 @@
     width: 100%;
 }
 .navbar-element {
-    display: block;
+    display: inline-block;
     transition: background 0.15s linear;
     cursor: pointer;
     text-decoration: none;
