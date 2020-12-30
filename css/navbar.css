@@ -5,6 +5,12 @@
     top: 0;
     width: 100%;
 }
+.navbar-logo {
+    position: absolute;
+    display: block;
+    text-align: center;
+    left: calc((100% - 300px) / 2);
+}
 .navbar-element {
     display: inline-block;
     transition: background 0.15s linear;
@@ -23,11 +29,11 @@
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 .navbar-element-image {
-    height: 30px;
+    height: 35px;
     vertical-align: middle;
     padding-left: 10px;
     display: inline-block;
@@ -73,9 +79,6 @@
 }
 .dropdown:hover .dropdown-content {
     display: block;
-}
-.left {
-    float: left;
 }
 .right {
     float: right;
