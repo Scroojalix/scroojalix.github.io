@@ -8,6 +8,7 @@
 .navbar-logo {
     float: left;
     padding: 5px;
+    position: absolute;
 }
 .navbar-element {
     float: right;
