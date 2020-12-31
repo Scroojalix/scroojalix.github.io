@@ -13,10 +13,14 @@
     </head>
     <body>
         <div id="nav-placeholder"></div>
-        <script>
+        <script id="navbar-script">
             $.get("/navbar-template.html", function(data){
                 $("#nav-placeholder").replaceWith(data);
             });
+            var node = document.getElementById("navbar-script");
+            if (node.parentNode) {
+                node.parentNode.removeChild(node);
+            }
         </script>
         <div class="main">
             <h1>Projects</h1>
