@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NPCManager - Wiki</title>
+        <link rel="shortcut icon" href="/images/icons/favicon.ico?">
+        <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="nav-placeholder"></div>
+        <script>
+            $.get("/navbar-template.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
+        <div class="main">
+            <h1>NPCManager Wiki</h1>
+            <p><a href="/projects/NPCManager">Back to the NPCManager page.</a></p>
+        </div>
+    </body>
+</html>
