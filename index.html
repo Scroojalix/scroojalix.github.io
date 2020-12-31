@@ -3,16 +3,18 @@
     <head>
         <title>Scroojalix's Webpage</title>
         <link rel="shortcut icon" href="favicon.ico?">
-        <link rel="stylesheet" type="text/css" href="css/navbar.css">
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="css/navbar.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <div id="nav-styles"></div>
         <script src="//code.jquery.com/jquery.min.js"></script>
+        <!--TODO create script that replaces nav-styles with relevent link tags-->
     </head>
     <body>
         <div id="nav-placeholder"></div>
         <script>
-            $.get("nav.html", function(data){
+            $.get("navbar-template.html", function(data){
                 $("#nav-placeholder").replaceWith(data);
             });
         </script>
