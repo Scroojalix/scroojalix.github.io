@@ -9,19 +9,10 @@
         <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
-        <div id="nav-placeholder"></div>
-        <script id="navbar-script">
-            $.get("/navbar-template.html", function(data){
-                $("#nav-placeholder").replaceWith(data);
-            });
-            var node = document.getElementById("navbar-script");
-            if (node.parentNode) {
-                node.parentNode.removeChild(node);
-            }
-        </script>
+        <script id="navbar-script" src="/js/navbar.js"></script>
         <div class="main">
             <h1>Projects</h1>
             <p><a href="/projects/NPCManager">NPCManager</a></p>
