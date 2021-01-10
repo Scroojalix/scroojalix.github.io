@@ -5,10 +5,23 @@
     top: 0;
     width: 100%;
 }
-.navbar-logo {
+.navbar-logo-sm {
     float: left;
     padding: 5px;
     position: absolute;
+}
+.navbar-logo-lg {
+    display: none;
+}
+@media screen and (min-width: 650px) {
+    .navbar-logo-sm {
+        display: none;
+    }
+    .navbar-logo-lg {
+        padding: 5px;
+        position: absolute;
+        display: inline-block;
+    }
 }
 .navbar-element {
     float: right;
