@@ -5,30 +5,32 @@
     top: 0;
     width: 100%;
 }
-.navbar-logo-sm {
+.navbar-logo {
     float: left;
     padding: 5px;
     position: absolute;
 }
-.navbar-logo-lg {
+.sm-view {
+    display: inline-block;
+}
+.lg-view {
     display: none;
 }
 @media screen and (min-width: 650px) {
-    .navbar-logo-sm {
+    .sm-view {
         display: none;
     }
-    .navbar-logo-lg {
-        padding: 5px;
-        position: absolute;
+    .lg-view {
         display: inline-block;
     }
 }
 .navbar-element {
+    vertical-align: middle;
     float: right;
     transition: background 0.15s linear;
     cursor: pointer;
     text-decoration: none;
-    margin-left: 20px;
+    padding: 15px 10px;
 }
 .navbar-element:hover {
     background: #99999960;
@@ -36,19 +38,12 @@
 }
 .navbar-element-text {
     text-align: center;
-    vertical-align: middle;
     font-family: 'Open Sans', sans-serif;
     color: #f2f2f2;
-    display: inline-block;
-    margin-left: 5px;
-    margin-right: 10px;
-    padding-top: 19px;
-    padding-bottom: 19px;
 }
 .navbar-element-image {
     height: 30px;
     vertical-align: middle;
-    padding-left: 10px;
     display: inline-block;
 }
 .dropdown {
