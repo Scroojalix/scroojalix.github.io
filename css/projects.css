@@ -9,7 +9,7 @@
     display: flex;
     margin: 0px auto 5px auto;
     padding: 5px;
-    transition: background 0.15s linear;
+    transition: background 0.15s linear, color 0.15s linear;
     text-decoration: none;
     color: black;
 }
@@ -66,6 +66,7 @@
 }
 .project-panel:hover {
     background: #a8a8a8;
+    color: rgb(83, 83, 83);
 }
 .project-panel:hover .project-panel-image {
     opacity: 0.5;
