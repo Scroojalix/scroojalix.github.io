@@ -107,7 +107,6 @@
 }
 .dropdown-content a:hover {
     background: #c0c0c060;
-    transition: background 0.15s linear;
 }
 .dropdown:hover .dropdown-content {
     display: block;

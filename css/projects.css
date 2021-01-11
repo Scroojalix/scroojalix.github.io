@@ -1,0 +1,72 @@
+.project-panel {
+    background: #c4c4c4;
+    border-radius: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    margin: 0px auto 5px auto;
+    padding: 5px;
+    transition: background 0.15s linear;
+    text-decoration: none;
+    color: black;
+}
+.project-panel-text {
+    flex-direction: column;
+    font-size: 20px;
+}
+.project-panel-text .description {
+    display: none;
+}
+/*Medium*/
+@media screen and (min-width: 400px) {
+    .project-panel {
+        height: 100px;
+        width: 350px;
+        margin: 0px auto 25px auto;
+        padding: 25px;
+    }
+    .project-panel-text .title {
+        font-size: 30px;
+    }
+    .project-panel-text .description {
+        font-size: 15px;
+        display: flex;
+    }
+}
+/*Large*/
+.project-panel-image-container {
+    background: #a8a8a8;
+    margin-right: 50px;
+    display: none;
+}
+.project-panel-image {
+    width: 200px;
+    height: 200px;
+    transition: opacity 0.15s linear;
+}
+@media screen and (min-width: 800px) {
+    .project-panel {
+        height: 200px;
+        width: 700px;
+        margin: 0px auto 50px auto;
+        padding: 50px;
+    }
+    .project-panel-text .title {
+        font-size: 60px;
+    }
+    .project-panel-text .description {
+        font-size: 20px;
+    }
+    .project-panel .project-panel-image-container {
+        display: flex;
+    }
+}
+.project-panel:hover {
+    background: #a8a8a8;
+}
+.project-panel:hover .project-panel-image {
+    opacity: 0.5;
+}
