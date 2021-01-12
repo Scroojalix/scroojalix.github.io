@@ -13,7 +13,6 @@
     position: relative;
     text-align: center;
     color: white;
-    font-size: 20px;
     font-family: "ibm_plex";
 }
 .homepage-image {
@@ -28,10 +27,26 @@
     margin-top: -3px;
 }
 .centered-image-text {
+    width: 75%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.centered-image-text h1 {
+    font-size: 25px;
+}
+.centered-image-text p {
+    font-size: 15px;
+    margin: 0;
+}
+@media all and (min-width: 650px) {
+    .centered-image-text h1 {
+        font-size: 50px;
+    }
+    .centered-image-text p {
+        font-size: 20px;
+    }
 }
 .main {
     display: block;
@@ -42,7 +57,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 .main h1 {
-    font-size: 50px;
+    margin: 10px 0px;
 }
 body {
     background: white;
