@@ -40,7 +40,7 @@
     font-size: 15px;
     margin: 0;
 }
-@media all and (min-width: 650px) {
+@media all and (min-width: 675px) {
     .centered-image-text h1 {
         font-size: 50px;
     }

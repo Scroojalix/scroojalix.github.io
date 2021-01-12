@@ -26,17 +26,17 @@
         display: inline-block;
     }
 }
-.sm-view-650 {
+.sm-view-675 {
     display: inline-block;
 }
-.lg-view-650 {
+.lg-view-675 {
     display: none;
 }
-@media screen and (min-width: 650px) {
-    .sm-view-650 {
+@media screen and (min-width: 675px) {
+    .sm-view-675 {
         display: none;
     }
-    .lg-view-650 {
+    .lg-view-675 {
         display: inline-block;
     }
     .navbar-element {
