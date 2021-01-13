@@ -40,7 +40,7 @@
         display: inline-block;
     }
     .navbar-element {
-        padding: 15px 10px !important;
+        padding: 14px 10px !important;
     }
     .dropdown-content a {
         min-width: 200px;
@@ -52,7 +52,7 @@
     transition: background 0.15s linear;
     cursor: pointer;
     text-decoration: none;
-    padding: 15px 0px;
+    padding: 14px 0px;
     text-align: center;
     min-width: 60px;
 }
@@ -65,11 +65,14 @@
     font-family: 'Open Sans', sans-serif;
     color: #f2f2f2;
     padding-left: 10px;
+    vertical-align: middle;
 }
-.navbar-element-image {
-    height: 30px;
+.navbar-image {
     vertical-align: middle;
     display: inline-block;
+}
+.white {
+    color: #f2f2f2;
 }
 .dropdown {
     float: right;
@@ -99,12 +102,6 @@
     font-family: 'Open Sans', sans-serif;
     color: black;
     padding-left: 10px;
-}
-.navbar-dropdown-image {
-    height: 40px;
-    width: 40px;
-    vertical-align: middle;
-    display: inline-block;
 }
 .dropdown-content a:hover {
     background: #c0c0c060;
