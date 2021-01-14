@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NPCManager - Wiki</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/images/icons/favicon.ico?">
+        <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/1ff8a0b117.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script id="navbar-script" src="/js/navbar.js"></script>
+        <div class="main">
+            <h1>NPCManager Wiki</h1>
+            <h2>API Updates (1.3.6)</h2>
+            <p>
+                An NPCBuilder class has been implemented. Use this class to create an NPCData object with all the custom modifications already applied. To spawn an NPC using the API, create an NPC using the NPCBuilder class then run:
+            </p>
+            <p>
+                NPCManagerAPI.spawnNPC(data);
+            </p>
+            <p>
+                Example:
+            </p>
+            <p>
+                NPCData data = new NPCBuilder("test", new Location(Bukkit.getWorld("test"), 0, 70, 0))
+                .doNotStore()
+                .removeHeadRotation()
+                .setRange(20)
+                .setHelmet(new ItemStack(Material.DIAMOND_HELMET))
+                .create();
+                NPCManagerAPI.spawnNPC(data);
+            </p>
+            <p><a href="/projects/NPCManager">Back to the NPCManager page.</a></p>
+        </div>
+    </body>
+</html>
