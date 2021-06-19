@@ -1,6 +1,5 @@
 .wiki {
     display: flex;
-    margin-top: 59px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     align-items: stretch;
@@ -11,12 +10,12 @@
 .wiki_pages {
     flex-direction: row;
     background-color: #c4c4c4;
-    width: 40%;
-    max-width: 400px;
+    width: clamp(200px, 40%, 400px);
     text-align: left;
     padding-left: 20px;
+    padding-top: 60px;
 }
 .wiki_article {
     flex-direction: column;
-    padding: 0 75px 50px;
+    padding: 60px 50px 25px;
 }

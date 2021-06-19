@@ -58,7 +58,8 @@
 .main h1 {
     margin: 10px 0px;
 }
-body {
+html, body {
     background: white;
     margin: 0;
+    height: 100%;
 }
