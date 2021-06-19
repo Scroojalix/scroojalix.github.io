@@ -16,8 +16,8 @@
     </head>
     <body>
         <script id="navbar-script">loadNavbar()</script>
-        <div class="wiki">
-            <div class="wiki_pages">
+        <flex class="wiki">
+            <flex class="wiki_pages">
                 <h1>Wiki</h1>
                 <ul>
                     <li>Install</li>
@@ -25,30 +25,8 @@
                     <li>Commands</li>
                     <li>API Usage</li>
                 </ul>
-            </div>
-            <div class="wiki_article">
-                <h1>NPCManager Wiki</h1>
-                <h2>API Updates (1.3.6)</h2>
-                <p>
-                    An NPCBuilder class has been implemented. Use this class to create an NPCData object with all the custom modifications already applied. To spawn an NPC using the API, create an NPC using the NPCBuilder class then run:
-                </p>
-                <p>
-                    NPCManagerAPI.spawnNPC(data);
-                </p>
-                <p>
-                    Example:
-                </p>
-                <p>
-                    NPCData data = new NPCBuilder("test", new Location(Bukkit.getWorld("test"), 0, 70, 0))
-                    .doNotStore()
-                    .removeHeadRotation()
-                    .setRange(20)
-                    .setHelmet(new ItemStack(Material.DIAMOND_HELMET))
-                    .create();
-                    NPCManagerAPI.spawnNPC(data);
-                </p>
-                <p><a href="/projects/NPCManager">Back to the NPCManager page.</a></p>
-            </div>
-        </div>
+            </flex>
+            <flex id="article" class="wiki_article"></flex>
+        </flex>
     </body>
 </html>
