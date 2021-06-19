@@ -49,6 +49,12 @@
         font-size: 20px;
     }
 }
+.noselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 .main {
     display: block;
     margin-top: 60px;
