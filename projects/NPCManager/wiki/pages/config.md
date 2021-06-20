@@ -1,0 +1,1 @@
+Open the config.yml file in the plugins/NPCManager folder of your server. Edit the values in that file to configure the plugin to your liking.
