@@ -12,3 +12,22 @@ function loadNavbar() {
         node.parentNode.removeChild(node);
     }
 }
+
+// Loading Wiki page
+const md = new Remarkable();
+function getWikiPageData(name) {
+    $.get('/projects/NPCManager/wiki/pages/'+name+'.md')
+        .done(function(data) {
+            $('#article').html(md.render(data))
+            console.log(data)
+        }).fail(function() {
+            //File does not exist, load root data
+            getWikiPageData('root');
+        }); 
+}
+const page = new URLSearchParams(window.location.search).get('page')
+if (page != null) {
+    html = md.render(getWikiPageData(page));
+} else {
+    html = md.render(getWikiPageData('root'));
+}
