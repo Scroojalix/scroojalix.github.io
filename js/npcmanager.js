@@ -19,9 +19,7 @@ function getWikiPageData(name) {
     $.get('/projects/NPCManager/wiki/pages/'+name+'.md')
         .done(function(data) {
             $('#article').html(md.render(data))
-            console.log(data)
         }).fail(function() {
-            //File does not exist, load root data
             getWikiPageData('root');
         }); 
 }
